@@ -7,10 +7,15 @@ boxes.forEach((boxWrapper, index) => {
     const radioBtn = boxWrapper.querySelector('input[type="radio"]');
     boxWrapper.style.backgroundColor = '';
     box.addEventListener('click', () => {
+        boxes.forEach(wrapper => {
+            wrapper.style.backgroundColor = '';
+            wrapper.style.border = '';
+        });
         radioBtn.checked = true;
         hiddenSections.forEach((section, i) => {
             if (i === index) {
                 boxWrapper.style.backgroundColor = '#FFF9FA';
+                boxWrapper.style.border = '2px solid #FF6B82';
                 section.style.display = 'flex';
                 section.style.marginTop = '10px';
                 section.style.paddingLeft = '50px';

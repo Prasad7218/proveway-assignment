@@ -99,9 +99,9 @@ body {
   text-align: center;
 }
 
-/* .input-wrapper input[type="radio"] {
+.input-wrapper input[type="radio"] {
   accent-color: #ff6b82;
-} */
+}
 
 .price h3 {
   font-weight: 500;
